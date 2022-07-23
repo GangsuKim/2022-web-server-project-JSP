@@ -1,0 +1,60 @@
+.userBtn {
+    background-color: #674836;
+    width: 60px;
+    height: 60px;
+    z-index: 20;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    border-radius: 50%;
+
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.userBtn:hover {
+    background-color: #6d6159;
+    cursor: pointer;
+}
+
+.MyBtn {
+    background-color: #674836;
+   	padding: 10px;
+    z-index: 20;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'GmarketSansLight';
+}
+
+.MyBtn:hover {
+    background-color: #6d6159;
+    cursor: pointer;
+}
+
+.logoutBtn {
+    background-color: #833131;
+   	padding: 10px;
+    z-index: 20;
+    bottom: 20px;
+    left: 80px;
+    position: absolute;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'GmarketSansLight';
+}
+
+.logoutBtn:hover {
+    background-color: #bd6d6d;
+    cursor: pointer;
+}

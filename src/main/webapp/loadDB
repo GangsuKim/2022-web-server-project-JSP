@@ -1,0 +1,57 @@
+USE beanplace;
+
+select * from areaname WHERE id=0;
+
+
+CREATE TABLE cafes (
+	area int NOT NULL,
+	id int NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	addr VARCHAR(100) NOT NULL,
+	stars float NOT NULL,
+	tags VARCHAR(100) NOT NULL,
+	verified int NOT NULL,
+	PRIMARY KEY(id)
+)
+
+CREATE TABLE area_16_temp (
+	id int NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	addr VARCHAR(100) NOT NULL,
+	stars float NOT NULL,
+	tags VARCHAR(100) NOT NULL,
+	PRIMARY KEY(id, name)
+)
+
+CREATE TABLE review_area_16 (
+	id int NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	pass VARCHAR(100) NOT NULL,
+	review VARCHAR(200),
+	stars float NOT NULL,
+	PRIMARY KEY (id)
+)
+
+CREATE TABLE userdb (
+	id VARCHAR(100) NOT NULL,
+	passwd VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	reviews int NOT NULL,
+	PRIMARY KEY (id)
+)
+
+CREATE TABLE reviews (
+	area int not null,
+	c_id int not null,
+	r_id int not null PRIMARY KEY,
+	stars int not null,
+	r_values VARCHAR(100),
+	writer VARCHAR(100) NOT NULL,
+	date VARCHAR(100) NOT NULL
+)
+
+INSERT INTO reviews(area, c_id, r_id, stars, r_values, writer, date) VALUES (15,1501,15010001,5, '카페가 너무 이쁘고 좋아요!', '김강수', '2022-06-08');
+
+INSERT INTO area_21
+VALUES ("2101","디저트카페 아도베라","강원 춘천시 낙원길 48 3층", "베이커리, 디저트");

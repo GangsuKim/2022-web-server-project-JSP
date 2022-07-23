@@ -1,0 +1,123 @@
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'GmarketSansMedium';
+}
+
+*::-webkit-scrollbar {
+    width: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border: 8px solid transparent;
+    border-radius: 40px;
+    background-color: #674836;
+    background-clip: padding-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.alignCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+main {
+    width: 500px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.loginform {
+    width: calc(100% - 80px);
+    padding: 40px;
+}
+
+.loginform > .title {
+    width: 400px;
+    display: inline-block;
+    color: #674836;
+    font-size: 30px;
+    font-family: 'GmarketSansLight';
+    border-radius: 15px;
+    padding: 10px 10px 5px 10px;
+}
+
+input {
+    width: 390px;
+    padding-top: 5px;
+    height: 53px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-size: 25px;
+    border: 1px solid #674836;
+    color: #674836;
+}
+
+input[type=submit], #signUpBtn{
+    width: 410px;
+    background-color: #674836;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    font-family: 'GmarketSansLight';
+    border-radius: 15px;
+    padding: 10px 10px 5px 10px;
+}
+
+input[type=submit]:hover, #signUpBtn:hover{
+    cursor: pointer;
+    background-color: #6d6159;
+}
+
+input:focus {
+    outline: #e2bfab solid 3px;
+}
+
+#loginFailed {
+	margin-top: 10px;
+	color: red;
+}
+
+.loginform > a {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'GmarketSansLight';
+    font-size: 20px;
+    color: #674836;
+    text-decoration: none;
+}
+
+.loginform > a:hover {
+    text-decoration: underline;
+}
+
+.backToHome {
+    color: white;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: #674836;
+    border-radius: 50%;
+    line-height: 88px;
+    font-size: 35px;
+}
+
+.backToHome:hover {
+    background-color: #725e52;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | BEAN 공간</title>
+
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <main>
+        <div class="loginform alignCenter">
+            <div class="title">빈 공간을 BEAN 공간으로</div>
+            <form action="login.jsp" method=POST>
+                <input type="text" name="userId" placeholder="아이디"><br>
+                <input type="password" name="userPw" placeholder="비밀번호"> <br>
+                <a id="loginFailed" hidden>아이디 비밀번호가 일치하지 않습니다.</a> <br>
+                <input type="submit" value="로그인">
+            </form>
+            <a href="signup.html" id="signUp" class="signUp">회원가입</a> | <a href="#" id="findMy" class="findMy">아이디/비밀번호 찾기</a>
+        </div>
+    </main>
+    
+    <div class="backToHome" onclick="location.href='./'">
+        <i class="bi bi-house-fill"></i>
+    </div>
+    
+    <script>
+    	const errorCode = location.href.split("=")[1];
+    	console.log(errorCode);
+    	if(errorCode === 'failed') {
+    		const loginFailed = document.getElementById('loginFailed');
+    		loginFailed.hidden = false;
+    	}
+    </script>
+</body>
+
+</html>

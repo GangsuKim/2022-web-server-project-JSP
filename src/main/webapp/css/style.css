@@ -1,0 +1,454 @@
+@charset "EUC-KR";
+
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'GmarketSansMedium';
+}
+
+*::-webkit-scrollbar {
+    width: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border: 8px solid transparent;
+    border-radius: 40px;
+    background-color: #674836;
+    background-clip: padding-box;
+}
+
+html, body {
+    height: 100%;   
+}
+
+.alignCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main */
+main {
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    position: relative;
+}
+
+/* Left Div */
+.leftDiv {
+    position: relative;
+    /* width: calc(100% - 440px); */
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+
+/* Right bar*/
+.rightBarDiv {
+    padding: 20px;
+    width: 400px;
+    height:  calc(100% - 40px);
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    /* DEV */
+    /* background-color: black; */
+    /* border: 1px solid black; */
+}
+
+.rightBarDiv > div {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.247);
+}
+
+.mainTextDiv {
+    height: 70px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #674836;
+
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: white;
+    font-family: 'GmarketSansLight';
+}
+
+/* List */
+.mainRightList {
+    margin-top: 10px;
+    border-radius: 20px;
+    height: calc(100% - 120px);
+    padding: 20px 0px 20px 20px;
+    background-color: white;
+    overflow: scroll;
+}
+
+.mainRightList > hr {
+    margin: 10px;
+}
+
+.districtName {
+    background-color: #AC846C;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+    font-family: 'GmarketSansLight';
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+
+.item {
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 5px 0px 7px 0px;
+}
+
+.item:hover, .selected {
+    background-color: #6748361f;
+    cursor: pointer;
+}
+
+.item > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    position: relative;
+    padding-left: 10px;
+}
+
+th {
+    width: 100px;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+#cafeTitle {
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    height: 25px;
+}
+
+#cafeTitle > #stars {
+    color: #e6c02b;
+}
+
+#cafeAddr {
+    color: rgb(63, 63, 63);
+    height: 15px;
+}
+
+.tags {
+    background-color: #67483659;
+    display: inline-block;
+    padding: 5px 10px 3px 10px;
+    border-radius: 10px;
+    color: #000000;
+    font-family: 'GmarketSansLight';
+    font-weight: 600;
+}
+
+/* Add cafe */
+.addMore {
+    height: 60px;
+    /* background-color: black; */
+    position: sticky;
+    bottom: 0px;
+}
+
+.addMore > .addButton {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #674836;
+    font-family: 'GmarketSansLight';
+    padding: 5px 10px 3px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 30px white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.addMore > .addButton:hover {
+    background-color: #6d6159;
+    cursor: pointer;
+}
+
+.toolTip {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 30px;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px rgb(173, 173, 173);
+
+    background-color: #674836;
+    color: white;
+    font-family: 'GmarketSansLight';
+    font-size: 20px;
+}
+
+/* article */
+article {
+    width: calc(100% - 450px);
+    display: inline-block;
+    margin-bottom : 100px;
+}
+
+article > .innerDiv {
+    height: 100%;
+    margin: 60px;
+    background-color: white;
+} 
+
+#articletitle {
+    font-size: 4vw;
+}
+
+#stars {
+    color: #e6c02b;
+}
+
+#articleOneLine {
+    font-size: 2vw;
+    opacity: 0.8;
+}
+
+.comment {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'GmarketSansLight';
+    
+    margin: 50px 0px;
+}
+
+.commentDes {
+    font-size: 1.5vw;
+    font-family: 'GmarketSansLight';
+    opacity: 0.7;
+}
+
+.seperater {
+    text-align: center;
+    /* background-color: yellow; */
+}
+
+.seperater > .inner {
+    width: 49%;
+    /* background-color: yellow; */
+    display: inline-block;
+}
+
+.seperater > .inner:nth-child(2) {
+    text-align: left;
+    float: right;
+}
+
+#times, #break {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 2vw;
+    margin-left: 20px;
+}
+
+.timesTitle {
+    width: 11vw;
+    display: inline-block;
+    background-color: rgb(218, 218, 218);
+    padding: 2px 5px 2px 10px;
+    border-radius: 10px;
+    color: #535353;
+}
+
+.timesTitle > span {
+    text-align: center;
+    display: inline-block;
+    width: calc(100% - 3vw);
+}
+
+#reviewTitle {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 2vw;
+    color: #000000a9;
+}
+
+.reviews {
+    /* background-color: black; */
+}
+
+.reviews > .userReview {
+    background-color: #e9dfda;
+    /* background-color: #674836; */
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    display: block;
+}
+
+.userReview > .userName {
+    margin-left: 10px;
+    font-size: 1.5vw;
+    color: #674836;
+    font-family: 'GmarketSansLight';
+}
+
+.starShow {
+    margin-left: 5px;
+}
+
+.starShow > i {
+    font-size: 1.5vw;
+    margin-right: -0.3vw;
+    color: rgb(255, 255, 255);
+}
+
+.starShow > .fill {
+    /* color: #fbff00; */
+    color: #674836;
+}
+
+.userDate {
+    margin-left: 10px;
+    font-size: 1vw;
+    color: rgba(226, 226, 226, 0.89);
+    font-family: 'GmarketSansLight';
+    color: #674836;
+}
+
+.userReviewValue {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 2vw;
+    /* font-family: 'GmarketSansLight'; */
+    color: #674836;
+}
+
+.writeReview {
+    background-color: #674836;
+    color: white;
+    display: inline-block;
+    font-size: 1.5vw;
+    padding: 10px 10px 10px 10px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 10px;
+}
+
+.writeReview:hover {
+    background-color: #6d6159;
+    cursor: pointer;
+}
+
+.noReview {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+	font-size: 2vw;
+}
+
+.write_review_window {
+    z-index: 30;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    background-color: white;
+
+    border-radius: 20px;
+    border: 3px solid #674836;
+    box-shadow: 0px 0px 30px rgb(184, 184, 184);
+    padding: 20px;
+}
+
+.write_review_window #r_name {
+    border: 2px solid #674836;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 10px;
+    color: #1d1d1d;
+}
+
+.write_review_window #r_name:focus {
+    outline: #e2bfab solid 3px;
+}
+
+.write_review_window textarea {
+    margin-top: 10px;
+    width: calc(100% - 25px);
+    height: 170px;
+    resize: none;
+    border: 2px solid #674836;
+    border-radius: 10px;
+    color: #1d1d1d;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.write_review_window textarea:focus {
+    outline: #e2bfab solid 3px;
+}
+
+.write_review_window input[type=submit] {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #674836;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.starbox {
+    display: inline-block;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.starbox i {
+    margin-right: -5px;
+    color: #cecece;
+    cursor: pointer;
+}
+
+.reviewCnt {
+	font-size: 1.7vw;
+    font-family: 'GmarketSansLight';
+    margin-left: 10px;
+    padding: 5px 10px 0px 10px;
+    background-color: #67483659;
+    margin-top: 3px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #674836;
+}
