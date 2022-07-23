@@ -1,0 +1,16 @@
+footer {
+    width: calc(100% - 100px);
+    height: 7vw;
+    background-color: #47352a;
+    padding: 50px;
+    color: white;
+}
+
+#footerMain {
+    font-size: 2.5vw;
+}
+
+#footerDes {
+    font-family: 'GmarketSansLight';
+    font-size: 1.5vw;
+}
