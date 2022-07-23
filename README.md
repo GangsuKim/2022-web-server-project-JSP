@@ -1,2 +1,5 @@
 # 2022-web-server-project-JSP
-2022 Hallym Univ. Web Back-end Programming using Servers lecture final project
+2022년 1학기 (3학년 1학기) 웹서버구축 강의를 위한 기말프로젝트 입니다.  
+
+> 본 레포지토리는 JSP 프로젝트로 제작된 프로젝트입니다.  
+> 실제 동작이 가능한 웹페이지는 준비중에 있습니다.
